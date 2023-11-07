@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0px;
+    font-size: 20px;
+  }
+  
+  .signup-container {
+    background-color: #ece3e3;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(221, 206, 206, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+  }
+        
+  /* header starts here */
+
+  .signup-container h2 {
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  } 
+    
+   /* paragraph div starts here */
+
+  .signup-container p {
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .social-media  a{
+    text-decoration: none;
+ 
+  }
+  
+  .social-media {
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* here is my divider */
+  .divider{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+   
+  }
+
+  .ore {
+     background-color:  white;
+     border-radius: 50px;
+     padding: 20px;
+     border-radius: 50px;
+     border: 1px solid red;
+     
+     
+  }
+
+  .divider::before, .divider::after {
+    padding: 1px;
+    flex: 1;
+    background-color: black;
+    margin: 3px 10px;
+    content: "";
+  }
+    
+    /* my social media button starts here */
+
+  .facebook {
+    background-color: #3b5998;
+    border-radius: 50px;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+
+  }
+  
+  .twitter {
+    background-color: #1da1f2;
+    border-radius: 50px;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+  }
+  
+  .google {
+    background-color: #ea4335;
+    border-radius: 50px;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+  }
+  
+    /* social media icon spacing */
+  .facebook i, .twitter i, .google i {
+    margin-right: 10px;
+  }
+  
+     /* form div starts here */
+
+  form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  form .form-group label {
+    position: absolute;
+    margin: 12px 0 0 10px;
+    color: #ccc;
+  }
+  
+  form .form-group input {
+    width: calc(100% - 250px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 35px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 250px);
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (min-width: 460px) and (max-width: 1112px) {
+    .signup-container {
+      width: 90%;
+      background-color: aqua;
+    }
+
+    .signup-container p {
+      margin-bottom: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: medium;
+      margin-left: auto;
+    }
+    
+    .social-media{
+      display: flex;
+      flex-direction: column;
+      margin: -40px 50px;
+    }
+
+    /* buttons here */
+
+    .social-media a{
+        padding: 5px;
+      }
+
+      form .form-group {
+        position: relative;
+        margin-bottom: 5px;
+      }
+   
+  }
+  
